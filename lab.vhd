@@ -85,6 +85,16 @@ begin
   -- *****************************
   -- * 16 bit register           *
   -- *****************************
+  
+  process(clk) begin
+    if rising_edge(clk) then
+      if rst = '1' then
+        tal <= 0;
+      else if lp = '1' then
+        if pos = '0' then
+        
+    end if;
+  end process;  
 
   -- *****************************
   -- * Multiplexad display       *
